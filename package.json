@@ -1,0 +1,27 @@
+{
+  "name": "altice",
+  "version": "1.0.0",
+  "description": "altice test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"yarn sass:watch\" \"live-server\"",
+    "sass": "node-sass index.scss index.css",
+    "sass:watch": "node-sass -w index.scss index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaquelMarques97/altice.git"
+  },
+  "author": "Raquel Marques <araquelfmarques@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaquelMarques97/altice/issues"
+  },
+  "homepage": "https://github.com/RaquelMarques97/altice#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1"
+  }
+}

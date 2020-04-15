@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Altice Chalenge</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <img class="frog" style="height:80px; margin-top:50px;" src="public\img\SAPO_FH_Pol_N_RGB.png" />
+            </div>
+            <div class="menu">
+                <div style="margin-left:50px;" id="burger">
+                    <img onclick="navbar()" style="height:65px;margin-top:50px;"
+                        src="public\img\hamburger-menu-icon-png-9.png" />
+                </div>
+                <div id="vertical-menu" style="text-align:left;
+                 display:none;">
+                    <img id="close-menu" onclick="closeMenu()"
+                        style="height:38px; position:absolute; top:80px; left:5vw; display:none;"
+                        src="public\img\close-512.png" />
+
+                    <div class="nav-menu">
+                        <a href="/" class="active" id="option1">Lorem</a>
+                        <a href="#" id="option2">Ipsum</a>
+                        <a href="#" id="option3">Dolore</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="top">
+            <div class="shapes">
+                <div class="geometric">
+                    <div class="rectangle" id="rectangle"></div>
+                    <div class=triangle-small>
+                        <svg width="400px" height="100px">
+                            <polygon class="triangle" id="triangle1" points="140,10 180,19 150,40" style="fill:transparent;
+                                stroke:#57a8d1;
+                                stroke-width:5;" />
+                                <animate 
+                                xlink:href="#triangle1"
+                                attributeName="stroke-width"
+                                from="5"
+                                to="10" 
+                                dur="2s"
+                                begin="0s"
+                                repeatCount="20"
+                                fill="freeze" 
+                                id="triang-anim"/>
+                        </svg>
+
+                        
+               
+                    </div>
+                    <div class="circle small" id="circle3"></div>
+                    <div class="rectangle" id="rectangle2"></div>
+                    <div class="circle-triangle" style="display:inline-flex;">
+                        <div class="circle" id="circle1"></div>
+                        <svg width="200px">
+                            <polygon class="triangle" id="triangle2"
+                             points="180,50 170,120 110,100" 
+                             style="fill:transparent;
+                                stroke:#57a8d1;stroke-width:5;" />
+                                <animate 
+                                xlink:href="#triangle2"
+                                attributeName="stroke-width"
+                                from="10"
+                                to="5" 
+                                dur="2s"
+                                begin="0s"
+                                repeatCount="20"
+                                fill="freeze" 
+                                id="triang-anim"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="public/img/sapo_symbol.png" />
+                    <div class="inclination1"></div>
+                </div>
+            </div>
+            <div class="colorChoice">
+                <div style="background-color:#33cc99;" id="left" class="square left"></div>
+                <div id="active" class="activeColor" style=" border:solid 2px; border-color:#57a8d1;">
+                    <div style="background-color:#57a8d1;" id="central" class="square central"></div>
+                </div>
+                <div style=" background-color:#f5b87b;" id="right" class="square right">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="brand">
+        <div class="brand-main">
+            <div class="brandText">
+                <div style="text-align:left; margin-top:50px;">
+                    <svg width="200px" position="absolute">
+                        <polygon class="triangle" id="triangle3" points="170,5 130,90 195,120"
+                            style="fill:transparent;stroke:#57a8d1;stroke-width:5;" />
+                    </svg>
+                </div>
+                <div class="circle" id="circle2"></div>
+                <div class="circle big" id="circlebig"></div>
+                <div class="marca">
+                    <p>marca</p>
+                </div>
+                <h1>SAPO</h1>
+               
+                    <div class="logo2">
+                        <img src="public\img\saporight.png" />
+                    </div>
+                    <div class="text">
+                        <p class="main">Estamos consigo desde 1995, mas ainda mal
+                            começámos a tocar o futuro.</p>
+                        <p>Apostamos na credibilidade, na criatividade, na inovação, na tecnologia e na proximidade.</p>
+                        <p style="padding-top:20px;" id="colapse">Somos o SAPO, <span
+                                style="background-color:#57a8d1;color:white;" id="background">vamos tornar a sua vida
+                                mais simples, mais
+                                informada, mais divertida,mais prática</span>, aqui e em todo o mundo. Queremos estar na
+                            sua
+                            vida.</p>
+                        <img id="dot" onclick="colapse()" src="public\img\3dot.png" />
+                    </div>
+             
+
+                <a href="https://rd3.videos.sapo.pt/bRi3wOIOTyf2cWDtNkpj?jwsource=c1" target="blanck" class="links">
+                    <div class="manifesto" style="display:inline-flex;">
+                        <p>Manifesto</p>
+                        <div class="triangle-right"></div>
+                    </div>
+                    <div style="display:flex">
+                        <div class="triangle-left"></div>
+                        <div class="salto">
+                            <p>O SAPO deu o salto</p>
+                        </div>
+                        <div class="triangle-up"></div>
+                        <div class="triangle-right2"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="jump">
+        <div class="inclination2"></div>
+        <div class="title">
+            <p>O SAPO</p>
+        </div>
+        <h1 class="title2">
+            Deu
+            <span id="solution">
+                0
+            </span> saltos
+        </h1>
+        <div class="jump-calculation">
+            <div id="calculate">
+                <div class="data">
+                    <div style="margin-top:70px;">
+                        <label>X</label>
+                        <input type="number" id="x" />
+                        <hr>
+
+                    </div>
+                    <div>
+                        <label>Y</label>
+                        <input type="number" id="y" />
+                        <hr>
+                    </div>
+                    <div>
+                        <label>D</label>
+                        <input type="number" id="d" />
+                        <hr style="margin-bottom:70px;">
+                    </div>
+
+                </div>
+                <div id="response"></div>
+                <div style="display:none;" id="blue-response">Escolheu <span id="blue" style="background-color:#57a8d1">
+                        azul</span> X tem de ser igual ou inferior a 7. </div>
+                <div style="display:none;" id="green-response">Escolheu <span id="green"
+                        style="background-color:#33cc99"> verde </span> X tem de ser igual a 3. </div>
+
+
+                <div class="jump-button" style="display:flex;font-size:25px;">
+                    <div onclick="jump()" class="salto">
+                        <p>Dá o salto</p>
+                    </div>
+                    <div class="triangle-right">
+                    </div>
+                </div>
+            </div>
+            <div class="road">
+                <div class="logo">
+                    <img class="gray" id="gray2" src="public\img\SAPO_FH_Mon_G_RGB.png" />
+                </div>
+                <div class="background" id="background2"></div>
+                <div class="logo">
+                    <img class="colored" id="colored2" src="public/img/sapo_symbol.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social">
+                <img src="public\img\youtube.png" />
+            </div>
+            <div class="social">
+                <img src="public\img\Facebook.png" />
+            </div>
+            <div class="social">
+                <img src="public\img\vimeo.png" />
+            </div>
+        </div>
+        <div class="inclination"></div>
+    </footer>
+    <script src="navbar.js"></script>
+    <script src="close.js"></script>
+    <script src="colorChoice.js"></script>
+    <script src="colapse.js"></script>
+    <script src="jump.js"></script>
+</body>
+
+</html>

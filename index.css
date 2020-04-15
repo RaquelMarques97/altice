@@ -1,0 +1,710 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  font-family: "Roboto_condensed", Arial, Helvetica, sans-serif; }
+
+section {
+  margin: 0; }
+
+header {
+  background: #6E6E6E url("public/img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  header .navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+    header .navbar .nav-menu {
+      background-color: #000;
+      color: #FFF;
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+      min-height: 100%;
+      position: absolute;
+      z-index: 19;
+      right: 0;
+      width: 80vw;
+      padding-top: 80px; }
+      header .navbar .nav-menu a {
+        padding-bottom: 50px;
+        padding-left: 50px;
+        text-decoration: none;
+        color: white; }
+  header section.top .shapes {
+    justify-content: center;
+    overflow: hidden; }
+    header section.top .shapes .geometric {
+      margin-top: 50px; }
+  header section.top .logo {
+    position: relative;
+    overflow: hidden; }
+    header section.top .logo img {
+      position: relative;
+      z-index: 20;
+      max-width: 100vw; }
+    header section.top .logo .inclination1 {
+      position: absolute;
+      bottom: -150px;
+      left: 0;
+      right: 0;
+      width: 120%;
+      height: 200px;
+      background: #e5e5e5;
+      transform: rotate(-5deg); }
+  header .rectangle {
+    width: 70px;
+    height: 15px;
+    transform: rotate(30deg);
+    margin: auto;
+    margin-bottom: 50px;
+    border: solid 6px;
+    border-color: #57a8d1;
+    animation-name: turn;
+    animation-duration: 2s;
+    animation-iteration-count: 10; }
+
+@keyframes turn {
+  from {
+    transform: rotate(30deg); }
+  to {
+    transform: rotate(45deg); }
+  to {
+    transform: rotate(90deg); }
+  to {
+    transform: rotate(170deg); } }
+  header .circle {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: solid 6px;
+    border-color: #57a8d1;
+    animation-name: shrink-circle;
+    animation-duration: 2s;
+    animation-iteration-count: 10; }
+
+@keyframes shrink-circle {
+  from {
+    width: 100px;
+    height: 100px; }
+  to {
+    width: 50px;
+    height: 50px; } }
+    header .circle.small {
+      height: 50px;
+      width: 50px;
+      border: solid 6px;
+      display: none;
+      border-color: #57a8d1;
+      animation-name: grow-circlesmall;
+      animation-duration: 2s;
+      animation-iteration-count: 10; }
+
+@keyframes grow-circlesmall {
+  from {
+    width: 50px;
+    height: 50px; }
+  to {
+    width: 100px;
+    height: 100px; } }
+  header .colorChoice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #e5e5e5;
+    align-items: center;
+    padding-top: 50px; }
+    header .colorChoice .square {
+      height: 60px;
+      width: 60px;
+      margin: 20px;
+      cursor: pointer; }
+    header .colorChoice .square.central {
+      height: 90px;
+      width: 90px;
+      margin: 5px; }
+
+section.brand {
+  background-color: #e5e5e5;
+  position: relative; }
+  section.brand .brandText {
+    overflow: hidden;
+    color: #6E6E6E;
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    padding-left: 28px; }
+    section.brand .brandText .marca {
+      border-left: solid 5px #6E6E6E;
+      height: 100px;
+      font-size: 35px;
+      font-weight: bold;
+      margin-left: 40px;
+      position: relative; }
+      section.brand .brandText .marca p {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        left: 20px; }
+    section.brand .brandText h1 {
+      color: black;
+      font-size: 60px;
+      font-weight: bolder; }
+  section.brand .circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 500px;
+    margin-left: 150px;
+    position: absolute;
+    border: solid 6px;
+    border-color: #57a8d1; }
+  section.brand .circle.big {
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    top: 780px;
+    right: -152px;
+    border: dashed 6px;
+    border-color: #57a8d1; }
+  section.brand .logo2 {
+    position: absolute;
+    background-color: #FFF;
+    height: 270px;
+    width: 333px;
+    right: 0;
+    text-align: right;
+    font-size: 31px;
+    color: #6E6E6E; }
+    section.brand .logo2 img {
+      padding-top: 20px;
+      height: 170px; }
+  section.brand .text {
+    position: relative;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 5vw;
+    width: 220px;
+    font-size: 22px;
+    color: #6E6E6E;
+    line-height: 35px; }
+    section.brand .text p.main {
+      font-size: 30px; }
+    section.brand .text img {
+      position: relative;
+      bottom: -15px;
+      right: -190px; }
+  section.brand .links {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 20px; }
+    section.brand .links .manifesto {
+      background-color: #5b8f22;
+      color: #FFF;
+      width: 150px;
+      height: 50px;
+      margin-top: 100px;
+      margin-left: 0px;
+      padding-left: 20px; }
+      section.brand .links .manifesto p {
+        margin-top: 10px; }
+    section.brand .links .triangle-up {
+      margin-top: 20px;
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 50px solid #7ab800; }
+    section.brand .links .salto {
+      margin-top: 20px;
+      background-color: #7ab800;
+      color: #FFF;
+      width: 250px;
+      height: 50px;
+      padding-left: 20px; }
+      section.brand .links .salto p {
+        margin-top: 10px; }
+    section.brand .links .triangle-right {
+      margin-left: 35px;
+      width: 0;
+      height: 0;
+      border-top: 0px solid transparent;
+      border-left: 50px solid #5b8f22;
+      border-bottom: 50px solid transparent; }
+    section.brand .links .triangle-right2 {
+      display: none;
+      width: 0;
+      height: 0;
+      border-top: 0px solid transparent;
+      border-left: 50px solid #7ab800;
+      border-bottom: 50px solid transparent; }
+    section.brand .links .triangle-left {
+      display: none;
+      margin-right: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 50px solid #7ab800; }
+
+section.jump {
+  position: relative;
+  overflow: hidden; }
+  section.jump .inclination2 {
+    position: absolute;
+    top: -72px;
+    left: -50px;
+    right: 0;
+    width: 120%;
+    height: 150px;
+    background: #e5e5e5;
+    transform: rotate(5deg); }
+  section.jump .title {
+    border-left: solid 5px #6E6E6E;
+    height: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 70px;
+    position: relative;
+    top: 60px;
+    margin-top: 100px; }
+    section.jump .title p {
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      left: 20px;
+      color: #6E6E6E; }
+  section.jump .title2 {
+    padding: 40px;
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 0; }
+  section.jump #calculate {
+    background-color: #cccccc; }
+    section.jump #calculate .data {
+      display: flex;
+      flex-direction: column;
+      margin-left: 110px;
+      margin-right: 40px; }
+    section.jump #calculate label {
+      font-size: 40px;
+      left: 0; }
+    section.jump #calculate input {
+      background-color: #cccccc;
+      height: 35px;
+      border: none; }
+    section.jump #calculate hr {
+      border: solid 3px;
+      border-color: #000; }
+    section.jump #calculate .salto {
+      margin-top: 20px;
+      background-color: #7ab800;
+      color: #FFF;
+      width: 150px;
+      height: 50px;
+      margin-left: 50px;
+      padding-left: 20px;
+      margin-bottom: 50px; }
+      section.jump #calculate .salto p {
+        margin-top: 10px; }
+    section.jump #calculate .triangle-right {
+      margin-top: 20px;
+      width: 0;
+      height: 0;
+      border-top: 0px solid transparent;
+      border-left: 50px solid #7ab800;
+      border-bottom: 50px solid transparent; }
+  section.jump .road {
+    display: inline-flex; }
+    section.jump .road .background {
+      border-left: dashed 30px #57a8d1;
+      transform: rotate(-30deg);
+      height: 700px;
+      margin-left: 40px; }
+    section.jump .road .logo {
+      width: 100%; }
+      section.jump .road .logo .gray {
+        margin-top: 300px;
+        height: 150px;
+        margin-left: -100px; }
+      section.jump .road .logo .colored {
+        display: none;
+        margin-top: 80%;
+        height: 100px; }
+
+footer {
+  height: 300px;
+  position: relative;
+  background-color: #FFF;
+  overflow: hidden; }
+  footer .container {
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    top: 150px; }
+  footer .inclination {
+    position: absolute;
+    left: -50px;
+    right: 0;
+    width: 120%;
+    height: 400px;
+    background: #69a618;
+    transform: rotate(3deg); }
+  footer .social {
+    background-color: #FFF;
+    padding: 10px; }
+
+@media (min-width: 379px) and (max-width: 650px) {
+  section.brand .text {
+    margin-left: 20vw; } }
+
+@media (min-width: 650px) and (max-width: 768px) {
+  section.brand .brandText .logo2 {
+    zoom: 190%; }
+  section.brand .brandText .text p {
+    margin-top: 50px;
+    zoom: 190%;
+    width: 230px;
+    line-height: 35px;
+    margin-left: 10vw; }
+  section.brand .brandText .text img {
+    right: -500px; }
+  section.brand .links {
+    margin-left: 24vw; }
+  section.brand #circlebig {
+    margin-top: 270px;
+    width: 550px;
+    height: 550px;
+    right: -200px; } }
+
+@media (min-width: 769px) and (max-width: 1020px) {
+  section.brand .brandText .logo2 {
+    zoom: 190%; }
+  section.brand .brandText .text .main {
+    font-size: 50px;
+    line-height: 55px;
+    width: 350px; }
+  section.brand .brandText .text p {
+    padding-top: 45px;
+    width: 250px;
+    margin-left: 20vw;
+    font-size: 35px;
+    line-height: 40px; }
+  section.brand .brandText .text img {
+    right: -370px; }
+  section.brand #circlebig {
+    margin-top: 400px;
+    width: 650px;
+    height: 650px;
+    right: -290px; }
+  section.jump .title {
+    margin-left: 30vw; }
+  section.jump .title2 {
+    margin-left: 20vw; }
+  section.jump .data {
+    margin-left: 0; }
+    section.jump .data input {
+      font-size: 30px;
+      text-align: center; }
+    section.jump .data hr {
+      margin-top: 20px;
+      width: 50%; }
+  section.jump #response {
+    font-size: 30px; }
+  section.jump #blue-response {
+    font-size: 30px; }
+  section.jump #green-response {
+    font-size: 30px; } }
+
+@media (min-width: 1021px) and (max-width: 1199px) {
+  section.brand .brandText h1 {
+    font-size: 90px; }
+  section.brand .brandText .logo2 {
+    zoom: 280%; }
+    section.brand .brandText .logo2 p {
+      font-size: 30px; }
+  section.brand .brandText .text .main {
+    font-size: 90px;
+    line-height: 90px; }
+  section.brand .brandText .text p {
+    padding-top: 45px;
+    width: 600px;
+    margin-left: 10vw;
+    font-size: 65px;
+    line-height: 90px; }
+  section.brand .brandText .text img {
+    right: -650px; }
+  section.brand #circle2 {
+    top: 600px; }
+  section.brand #circlebig {
+    margin-top: 650px;
+    width: 750px;
+    height: 750px;
+    right: -350px; }
+  section.brand .links {
+    zoom: 200%;
+    margin-left: 7vw; }
+  section.jump .title {
+    margin-left: 30vw; }
+  section.jump .title2 {
+    margin-left: 20vw; }
+  section.jump .data {
+    margin-left: 0; }
+    section.jump .data input {
+      font-size: 30px;
+      text-align: center; }
+    section.jump .data hr {
+      margin-top: 20px;
+      width: 50%; }
+  section.jump .jump-button {
+    zoom: 150%;
+    margin-left: 10vw; }
+  section.jump #response {
+    font-size: 30px; }
+  section.jump #blue-response {
+    font-size: 30px; }
+  section.jump #green-response {
+    font-size: 30px; } }
+
+@media (min-width: 1200px) {
+  .navbar {
+    margin-left: 50px; }
+    .navbar img.frog {
+      height: 150px !important;
+      top: 0; }
+    .navbar #burger {
+      display: none; }
+    .navbar #vertical-menu {
+      display: inline-flex !important; }
+      .navbar #vertical-menu .nav-menu {
+        background-color: transparent !important;
+        display: block !important;
+        top: 20px;
+        text-align: right;
+        right: 10vw; }
+        .navbar #vertical-menu .nav-menu a {
+          color: black;
+          font-weight: bold;
+          font-size: 25px;
+          height: 50px; }
+          .navbar #vertical-menu .nav-menu a.active {
+            color: white;
+            background-color: #000;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 10px;
+            font-weight: normal; }
+    .navbar #close {
+      display: none; }
+    .navbar .menu {
+      display: flex;
+      width: 80vw; }
+  section.top .shapes {
+    margin-top: -200px; }
+    section.top .shapes .geometric {
+      transform: rotate(90deg);
+      margin-left: 40vw;
+      margin-top: 0; }
+    section.top .shapes .rectangle {
+      width: 100px;
+      height: 30px;
+      transform: rotate(330deg);
+      margin-right: 250px; }
+    section.top .shapes .circle {
+      height: 140px;
+      width: 140px; }
+      section.top .shapes .circle.small {
+        margin-left: 250px;
+        margin-bottom: 50px;
+        display: inline-flex;
+        height: 80px;
+        width: 80px; }
+    section.top .shapes .circle-triangle {
+      justify-content: space-between;
+      width: 400px; }
+      section.top .shapes .circle-triangle svg {
+        margin-left: 3px;
+        zoom: 180%; }
+    section.top .shapes .triangle-small svg {
+      margin-left: 3px;
+      zoom: 180%; }
+    section.top .shapes .logo img {
+      margin-left: 40vw;
+      width: 60vw;
+      margin-right: 5vw; }
+    section.top .shapes .logo .inclination1 {
+      height: 250px;
+      bottom: -140px; }
+  section.top .colorChoice {
+    position: absolute;
+    z-index: 21;
+    bottom: 50vh;
+    left: 10vw;
+    background-color: transparent; }
+    section.top .colorChoice .square.right, section.top .colorChoice .square.left {
+      height: 80px;
+      width: 80px; }
+    section.top .colorChoice .square.central {
+      height: 120px;
+      width: 120px; }
+  section.brand .brandText {
+    text-align: center; }
+    section.brand .brandText .circle {
+      right: 350px;
+      height: 120px;
+      width: 120px; }
+      section.brand .brandText .circle.big {
+        top: 600px !important;
+        left: 0;
+        height: 450px;
+        width: 450px;
+        margin-left: 50px; }
+      section.brand .brandText .circle#circle2 {
+        top: 290px;
+        right: 150px; }
+    section.brand .brandText .marca {
+      width: 200px;
+      margin-left: 49vw; }
+    section.brand .brandText h1 {
+      margin-top: 20px;
+      font-size: 60px; }
+    section.brand .brandText .logo2 {
+      display: inline-flex;
+      left: 200px;
+      height: 400px;
+      width: 400px; }
+      section.brand .brandText .logo2 img {
+        transform: scaleX(-1);
+        height: 400px; }
+    section.brand .brandText .text {
+      top: 50px;
+      width: 500px;
+      font-size: 30px;
+      line-height: 40px;
+      left: 35vw; }
+      section.brand .brandText .text .background {
+        background-color: #57a8d1;
+        color: white; }
+      section.brand .brandText .text img {
+        bottom: -70px;
+        right: -450px; }
+    section.brand .brandText .links {
+      zoom: 80%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      width: 100vw; }
+      section.brand .brandText .links .manifesto {
+        margin-top: 100px;
+        margin-left: 48vw; }
+      section.brand .brandText .links .salto {
+        margin-top: 100px; }
+    section.brand .brandText .triangle-up {
+      display: none; }
+    section.brand .brandText .triangle-right2 {
+      margin-top: 100px;
+      display: inline-flex;
+      width: 0;
+      height: 0;
+      border-top: 0px solid transparent;
+      border-left: 50px solid #7ab800;
+      border-bottom: 50px solid transparent; }
+    section.brand .brandText .triangle-left {
+      margin-top: 100px;
+      display: inline-flex;
+      margin-left: 20px; }
+  section.jump .inclination2 {
+    top: -150px;
+    height: 400px; }
+  section.jump .title {
+    margin-top: 300px;
+    margin-left: 45vw; }
+  section.jump .title2 {
+    text-align: center;
+    font-size: 60px; }
+  section.jump .jump-calculation {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 300px; }
+    section.jump .jump-calculation #calculate {
+      height: 550px;
+      width: 520px; }
+      section.jump .jump-calculation #calculate .data {
+        margin-left: 0; }
+        section.jump .jump-calculation #calculate .data input {
+          font-size: 30px;
+          text-align: center; }
+        section.jump .jump-calculation #calculate .data hr {
+          margin-top: 20px;
+          width: 50%; }
+      section.jump .jump-calculation #calculate #response {
+        font-size: 30px; }
+      section.jump .jump-calculation #calculate #blue-response {
+        font-size: 30px; }
+      section.jump .jump-calculation #calculate #green-response {
+        font-size: 30px; }
+  section.jump .road .background {
+    height: 600px; }
+  footer .inclination {
+    top: 120px; } }
+
+@media (min-width: 1790px) {
+  .rectangle {
+    width: 150px !important;
+    margin-left: 600px !important;
+    margin-bottom: 100px !important; }
+  .inclination1 {
+    height: 320px !important; }
+  section.brand .brandText {
+    text-align: center; }
+    section.brand .brandText .circle {
+      right: 350px;
+      height: 200px;
+      width: 200px; }
+      section.brand .brandText .circle.big {
+        top: 750px !important;
+        left: 0;
+        height: 700px;
+        width: 700px;
+        margin-left: 50px; }
+      section.brand .brandText .circle#circle2 {
+        top: 290px; }
+    section.brand .brandText .marca {
+      width: 200px;
+      margin-left: 49vw; }
+    section.brand .brandText h1 {
+      font-size: 100px; }
+    section.brand .brandText .logo2 {
+      zoom: 150%;
+      left: 250px; }
+  section.brand .text p.main {
+    font-size: 40px; }
+  section.brand .text p {
+    font-size: 40px;
+    line-height: 50px;
+    width: 650px;
+    margin-left: 4vw; }
+  section.brand .text #dot {
+    right: -700px; }
+  section.brand .text .background {
+    background-color: #57a8d1;
+    color: white; }
+  section.brand .links {
+    margin-top: 400px !important;
+    zoom: 130%;
+    flex-direction: row; }
+    section.brand .links .manifesto {
+      margin-left: 55vw !important; } }
+
+@media (min-width: 2200px) {
+  .rectangle {
+    margin-left: 1100px !important; } }
