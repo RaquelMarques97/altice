@@ -24,7 +24,7 @@ header {
       display: flex;
       flex-direction: column;
       font-size: 30px;
-      min-height: 500%;
+      min-height: 100%;
       position: absolute;
       z-index: 19;
       right: 0;

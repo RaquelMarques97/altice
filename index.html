@@ -44,9 +44,8 @@
                                 stroke:#57a8d1;
                                 stroke-width:5;" />
                             <animate xlink:href="#triangle1" attributeName="stroke-width" from="5" to="10" dur="2s"
-                                begin="0s" repeatCount="20" fill="freeze" id="triang-anim" />
+                                begin="0s" repeatCount="20" fill="initial" id="triang-anim" />
                         </svg>
-
                     </div>
                     <div class="circle small" id="circle3"></div>
                     <div class="rectangle" id="rectangle2"></div>
@@ -107,8 +106,6 @@
                         vida.</p>
                     <img id="dot" onclick="colapse()" src="public\img\3dot.png" />
                 </div>
-
-
                 <a href="https://rd3.videos.sapo.pt/bRi3wOIOTyf2cWDtNkpj?jwsource=c1" target="blanck" class="links">
                     <div class="manifesto" style="display:inline-flex;">
                         <p>Manifesto</p>
@@ -146,7 +143,6 @@
                         <label>X</label>
                         <input type="number" id="x" />
                         <hr>
-
                     </div>
                     <div>
                         <label>Y</label>
@@ -158,15 +154,13 @@
                         <input type="number" id="d" />
                         <hr style="margin-bottom:70px;">
                     </div>
-
                 </div>
                 <div id="response"></div>
                 <div style="display:none;" id="blue-response">Escolheu <span id="blue" style="background-color:#57a8d1">
                         azul</span> X tem de ser igual ou inferior a 7. </div>
                 <div style="display:none;" id="green-response">Escolheu <span id="green"
-                        style="background-color:#33cc99"> verde </span> X tem de ser igual a 3. </div>
-
-
+                        style="background-color:#33cc99"> verde </span> X tem de ser igual a 3.
+                </div>
                 <div class="jump-button" style="display:flex;font-size:25px;">
                     <div onclick="jump()" class="salto">
                         <p>Dá o salto</p>
