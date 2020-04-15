@@ -11,15 +11,12 @@ body {
 }
 
 section {
-    margin:0;
-    
+    margin:0;    
 }
-
 header {
     background: #6E6E6E url('public/img/bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;   
 
     .navbar {
         display:flex;
@@ -32,7 +29,7 @@ header {
             display:flex;
             flex-direction:column;
             font-size:30px;
-            min-height:500%;
+            min-height:100%;
             position:absolute;
             z-index:19;
             right:0;
@@ -44,47 +41,38 @@ header {
                 text-decoration:none;
                 color:white;
             }
-
-            
-
         }
     }
   
 
     section.top{
           
-            .shapes {
-               
-                justify-content:center; 
-                overflow:hidden;    
-                .geometric {
-                    margin-top:50px;
+        .shapes {               
+            justify-content:center; 
+            overflow:hidden;    
+            .geometric {
+                 margin-top:50px;
                 }       
-            }
+        }
 
-           
-          
-            .logo {    
-                position: relative;          
-                overflow:hidden;
-                img {
-                   
-                     position:relative;
-                     z-index:20;
-                     max-width: 100vw;
-                   
-                
-            
+        .logo {    
+            position: relative;          
+            overflow:hidden;
+                img {                   
+                    position:relative;
+                    z-index:20;
+                    max-width: 100vw;
+       
                 }
                 .inclination1{
                     position:absolute; 
-                        bottom:-150px; 
-                        left:0; 
-                        right:0; 
-                        width:120%; 
-                        height:200px;
-                        background: #e5e5e5; 
-                        transform: rotate(-5deg);
+                    bottom:-150px; 
+                    left:0; 
+                    right:0; 
+                    width:120%; 
+                    height:200px;
+                    background: #e5e5e5; 
+                    transform: rotate(-5deg);
                 }
 
             }         
@@ -185,8 +173,7 @@ section.brand {
        position:relative;
        z-index:10;  
        text-align:left;  
-       padding-left:28px; 
-      
+       padding-left:28px;      
        
        .marca {
         border-left: solid 5px #6E6E6E; 
@@ -222,7 +209,6 @@ section.brand {
         border-color:#57a8d1;
                 
     }
-
     
     .circle.big {
         position:absolute;
@@ -258,8 +244,7 @@ section.brand {
         width:220px;
         font-size:22px;
         color:#6E6E6E;
-        line-height: 35px;
-        
+        line-height: 35px;        
 
         p.main {
             font-size:30px;
@@ -272,14 +257,12 @@ section.brand {
         }
     }
 
-
     .links {     
         display:flex;   
         flex-direction: column;
         text-decoration: none;
         font-size:22px;   
-        margin-left:20px;  
-        
+        margin-left:20px;          
       
         .manifesto {
             background-color:#5b8f22;
@@ -314,7 +297,6 @@ section.brand {
                 margin-top:10px;
             }                
         }
-
 
         .triangle-right {
             margin-left:35px;            
@@ -388,7 +370,6 @@ section.jump {
     }
 
     #calculate {
-
         .data {
             display:flex; 
             flex-direction: column; 
@@ -411,7 +392,6 @@ section.jump {
             border:solid 3px;
             border-color:#000;
         }
-
        
         .salto {
             margin-top:20px;
@@ -436,7 +416,6 @@ section.jump {
             border-bottom: 50px solid transparent;
         }
     }
-
 
     .road {
         display:inline-flex;
@@ -503,20 +482,15 @@ footer {
         .text {
             margin-left:20vw;
         }
-
     }
-
 }
-
-
 
 @media (min-width: 650px) and (max-width: 768px) {
    section.brand {
         .brandText {
                 
             .logo2 {
-                zoom:190%;
-            
+                zoom:190%;            
             }
             .text {
                     
@@ -531,26 +505,20 @@ footer {
                 img {
                     right:-500px;
                 }
-
             }
-
         }
 
         .links {
             margin-left:24vw;
         }
-
             #circlebig {
                 margin-top:270px;
                 width:550px;
                 height:550px;
                 right:-200px;
             }
-
-        }
-        
-    }
-  
+        }        
+    } 
 
 
 @media (min-width: 769px) and (max-width: 1020px) {
@@ -584,7 +552,6 @@ footer {
             height:650px;
             right:-290px;
         }
-
     }
 
     section.jump {
@@ -622,7 +589,6 @@ footer {
             font-size:30px;
         }
     }   
-
 }
 
 @media (min-width: 1021px) and (max-width: 1199px) {
@@ -632,7 +598,7 @@ footer {
         }
     }       
 
-    section.brand {        
+    section.brand {      
       
         .brandText {
             
@@ -644,8 +610,7 @@ footer {
                 zoom:280%;
                 p {
                     font-size:30px;
-                }
-               
+                }               
             }
             .text {
                 .main {
@@ -688,8 +653,7 @@ footer {
         }
 
         .title2 {
-            margin-left:20vw;
-            
+            margin-left:20vw;            
         }
 
         .data {
@@ -704,7 +668,6 @@ footer {
                 margin-top:20px;
                 width:50%;
             }
-
         }
 
         .jump-button {
@@ -723,8 +686,7 @@ footer {
         #green-response {
             font-size:30px;
         }
-    }   
-
+    } 
 }
 
 
@@ -750,8 +712,7 @@ footer {
                 display:block!important;
                 top:20px;
                 text-align: right;
-                right:10vw;
-                
+                right:10vw;                
     
                 a {               
                     color:black;
@@ -768,8 +729,7 @@ footer {
                         font-weight:normal;
                       
                     }
-                }            
-     
+                }           
             }
         }
       
@@ -780,8 +740,7 @@ footer {
         .menu {
             display:flex;
             width:80vw;
-        }
-    
+        }    
     }
     
         section.top{
@@ -791,8 +750,7 @@ footer {
                 .geometric{
                     transform:rotate(90deg); 
                     margin-left:40vw;
-                    margin-top:0;
-                  
+                    margin-top:0;                  
                     }
     
                 .rectangle {
@@ -804,16 +762,14 @@ footer {
               
                 .circle {
                     height:140px;
-                    width:140px;
-                  
+                    width:140px;                  
     
                     &.small {
                         margin-left:250px;
                         margin-bottom:50px;
                         display:inline-flex;
                         height:80px;
-                        width:80px;
-                        
+                        width:80px;                        
                         }
                     } 
 
@@ -837,17 +793,13 @@ footer {
                     img {
                         margin-left:40vw;
                         width:60vw;
-                        margin-right:5vw; 
-                        
-                       
+                        margin-right:5vw;                  
                     }
                     .inclination1 {
                         height:250px;
                         bottom:-140px;
-                    }
-        
-                }
-               
+                    }        
+                }               
             }
     
             .colorChoice {
@@ -865,9 +817,7 @@ footer {
                     &.central {
                         height:120px;
                         width:120px;
-                    }
-    
-    
+                    }   
                 }
             }
         }
@@ -897,8 +847,7 @@ footer {
                    
                 .marca {               
                     width:200px;
-                    margin-left:49vw;              
-                    
+                    margin-left:49vw;             
                 }
     
                 h1 {
@@ -923,8 +872,7 @@ footer {
                     width:500px;
                     font-size:30px;
                     line-height: 40px;
-                    left:35vw;
-                 
+                    left:35vw;                 
     
                     .background{
                         background-color:#57a8d1;
@@ -933,10 +881,8 @@ footer {
     
                     img {                        
                         bottom:-70px;             
-                        right:-450px;
-            
-                    }
-                
+                        right:-450px;            
+                    }                
                 }
     
                 .links {
@@ -952,14 +898,12 @@ footer {
 
                     .salto {                       
                         margin-top:100px;
-                    }
-   
+                    }   
                 }
     
                 .triangle-up {                    
                     display:none;
-                }
-    
+                }   
     
                 .triangle-right2 {
                     margin-top:100px;
@@ -974,16 +918,13 @@ footer {
                 .triangle-left {
                     margin-top:100px;
                     display:inline-flex;
-                    margin-left:20px;
-                 
-                }
-    
+                    margin-left:20px;                 
+                }    
             }
         }
     
-        section.jump {           
-            
-            
+        section.jump {          
+       
             .inclination2 {
                 top:-150px;
                 height:400px;
@@ -991,8 +932,7 @@ footer {
     
             .title {
                 margin-top:300px;
-                margin-left:45vw;
-               
+                margin-left:45vw;               
             }
     
             .title2 {
@@ -1004,26 +944,21 @@ footer {
                 margin-top:150px;
                 display:flex;
                 justify-content: space-around;
-                margin-right:300px;
-                
+                margin-right:300px;                
     
                 #calculate {
                     height:550px;
                     width:520px;
                  
                     .data {
-                        margin-left:0;
-                      
+                        margin-left:0;                      
                         input {
                             font-size:30px;
                             text-align: center;                            
-                        }
-        
+                        }        
                         hr {
                             margin-top:20px;
-                            width:50%;
-                        }
-        
+                            width:50%;                      }
                     }
     
                     #response {
@@ -1037,17 +972,14 @@ footer {
                     #green-response {
                         font-size:30px;
                     }
-                }
-    
+                }    
             }
     
             .road {
                 .background {
                     height:600px;
                 }
-            }
-    
-    
+            }   
         }
 
         footer {
@@ -1072,9 +1004,7 @@ footer {
 
     section.brand {
         .brandText {
-            text-align: center;
-
-            
+            text-align: center;           
 
             .circle {
                 right:350px;
@@ -1097,7 +1027,6 @@ footer {
             .marca {               
                 width:200px;
                 margin-left:49vw;              
-                
             }
 
             h1 {
@@ -1121,18 +1050,14 @@ footer {
                     margin-left:4vw;                   
                 }
 
-              #dot {
+                #dot {
                   right:-700px;
-              }
-                
+                }                
 
                 .background{
                     background-color:#57a8d1;
                     color:white;
-                }
-
-               
-                               
+                }                          
             }
 
             .links {
@@ -1144,12 +1069,9 @@ footer {
                     margin-left:55vw!important;
                 }    
             }
-
         }
     }
 
-
-    
 
     @media (min-width: 2200px) {
         .rectangle {           
