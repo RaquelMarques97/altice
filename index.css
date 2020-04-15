@@ -24,7 +24,7 @@ header {
       display: flex;
       flex-direction: column;
       font-size: 30px;
-      min-height: 100%;
+      min-height: 500%;
       position: absolute;
       z-index: 19;
       right: 0;
@@ -425,6 +425,8 @@ footer {
     font-size: 30px; } }
 
 @media (min-width: 1021px) and (max-width: 1199px) {
+  section.top .inclination1 {
+    height: 250px !important; }
   section.brand .brandText h1 {
     font-size: 90px; }
   section.brand .brandText .logo2 {
