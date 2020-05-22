@@ -25,7 +25,7 @@
                 <div id="vertical-menu" style="display:none; text-align:left; ">
                     <img id="close-menu" onclick="closeMenu()" style="display:none;height:38px;
                     position:absolute; top:80px; 
-                    left:5vw;   " src="public\img\close-512.png" />
+                    left:5vw;" src="public\img\close-512.png" />
                     <div class="nav-menu">
                         <a href="/" class="active" id="option1">Lorem</a>
                         <a href="#" id="option2">Ipsum</a>
@@ -37,23 +37,20 @@
         <section class="top">
             <div class="shapes">
                 <div class="geometric">
-                    <div class="rectangle" id="rectangle"></div>
-                    <div class=triangle-small>
+                    <div class="rectangle shape blue" id="rectangle"></div>
+                    <div class="triangle-small">
                         <svg width="400px" height="100px">
-                            <polygon class="triangle" id="triangle1" points="140,10 180,19 150,40" style="fill:transparent;
-                                stroke:#57a8d1;
-                                stroke-width:5;" />
+                            <polygon class="triangle blue shape" id="triangle1" points="140,10 180,19 150,40" />
                             <animate xlink:href="#triangle1" attributeName="stroke-width" from="5" to="10" dur="2s"
                                 begin="0s" repeatCount="20" fill="initial" id="triang-anim" />
                         </svg>
                     </div>
-                    <div class="circle small" id="circle3"></div>
-                    <div class="rectangle" id="rectangle2"></div>
+                    <div class="circle small  blue shape" id="circle3" style="display:none;"></div>
+                    <div class="rectangle shape blue" id="rectangle2"></div>
                     <div class="circle-triangle" style="display:inline-flex;">
-                        <div class="circle" id="circle1"></div>
+                        <div class="circle shape blue" id="circle1"></div>
                         <svg width="200px">
-                            <polygon class="triangle" id="triangle2" points="180,50 170,120 110,100" style="fill:transparent;
-                                stroke:#57a8d1;stroke-width:5;" />
+                            <polygon class="triangle blue shape" id="triangle2" points="180,50 170,120 110,100" />
                             <animate xlink:href="#triangle2" attributeName="stroke-width" from="10" to="5" dur="2s"
                                 begin="0s" repeatCount="20" fill="freeze" id="triang-anim" />
                         </svg>
@@ -65,11 +62,12 @@
                 </div>
             </div>
             <div class="colorChoice">
-                <div style="background-color:#33cc99;" id="left" class="square left"></div>
-                <div id="active" class="activeColor" style=" border:solid 2px; border-color:#57a8d1;">
-                    <div style="background-color:#57a8d1;" id="central" class="square central"></div>
+                <div id="left" class="square left green" onclick=colorChange(event) data-current-color="green">
                 </div>
-                <div style=" background-color:#f5b87b;" id="right" class="square right">
+                <div id="active" class="activeColor blue shape">
+                    <div id="central" class="square central blue shape" data-current-color="blue"></div>
+                </div>
+                <div id="right" class="square right orange" onclick=colorChange(event) data-current-color="orange">
                 </div>
             </div>
         </section>
@@ -80,12 +78,12 @@
             <div class="brandText">
                 <div style="text-align:left; margin-top:50px;">
                     <svg width="200px" position="absolute">
-                        <polygon class="triangle" id="triangle3" points="170,5 130,90 195,120"
-                            style="fill:transparent;stroke:#57a8d1;stroke-width:5;" />
+                        <polygon class="triangle blue shape" id="triangle3" points="170,5 130,90 195,120"
+                            />
                     </svg>
                 </div>
-                <div class="circle" id="circle2"></div>
-                <div class="circle big" id="circlebig"></div>
+                <div class="circle shape blue" id="circle2"></div>
+                <div class="circle big blue shape" id="circlebig"></div>
                 <div class="marca">
                     <p>marca</p>
                 </div>
@@ -98,8 +96,9 @@
                     <p class="main">Estamos consigo desde 1995, mas ainda mal
                         começámos a tocar o futuro.</p>
                     <p>Apostamos na credibilidade, na criatividade, na inovação, na tecnologia e na proximidade.</p>
-                    <p style="padding-top:20px;" id="colapse">Somos o SAPO, <span
-                            style="background-color:#57a8d1;color:white;" id="background">vamos tornar a sua vida
+                    <p style="padding-top:20px;" id="colapse">Somos o SAPO, <span id="background"
+                            class="background shape blue">vamos tornar a
+                            sua vida
                             mais simples, mais
                             informada, mais divertida,mais prática</span>, aqui e em todo o mundo. Queremos estar na
                         sua
@@ -122,7 +121,6 @@
                 </a>
             </div>
         </div>
-
     </section>
 
     <section class="jump">
@@ -156,11 +154,11 @@
                     </div>
                 </div>
                 <div id="response"></div>
-                <div style="display:none;" id="blue-response">Escolheu <span id="blue" style="background-color:#57a8d1">
+                <!-- <div style="display:none;" id="blue-response">Escolheu <span id="blue" style="background-color:#57a8d1">
                         azul</span> X tem de ser igual ou inferior a 7. </div>
                 <div style="display:none;" id="green-response">Escolheu <span id="green"
                         style="background-color:#33cc99"> verde </span> X tem de ser igual a 3.
-                </div>
+                </div> -->
                 <div class="jump-button" style="display:flex;font-size:25px;">
                     <div onclick="jump()" class="salto">
                         <p>Dá o salto</p>
@@ -173,9 +171,9 @@
                 <div class="logo">
                     <img class="gray" id="gray2" src="public\img\SAPO_FH_Mon_G_RGB.png" />
                 </div>
-                <div class="background" id="background2"></div>
+                <div class="dash shape blue" id="background2"></div>
                 <div class="logo">
-                    <img class="colored" id="colored2" src="public/img/sapo_symbol.png" />
+                    <img class="colored frog-jump" id="colored2" src="public/img/sapo_symbol.png" />
                 </div>
             </div>
         </div>

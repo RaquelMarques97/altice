@@ -40,6 +40,15 @@ header {
     overflow: hidden; }
     header section.top .shapes .geometric {
       margin-top: 50px; }
+  header section.top .shape.blue {
+    border: solid 4px;
+    border-color: #57a8d1; }
+  header section.top .shape.green {
+    border: solid 4px;
+    border-color: #33cc99; }
+  header section.top .shape.orange {
+    border: solid 4px;
+    border-color: #f5b87b; }
   header section.top .logo {
     position: relative;
     overflow: hidden; }
@@ -62,8 +71,6 @@ header {
     transform: rotate(30deg);
     margin: auto;
     margin-bottom: 50px;
-    border: solid 6px;
-    border-color: #57a8d1;
     animation-name: turn;
     animation-duration: 2s;
     animation-iteration-count: 10; }
@@ -82,8 +89,6 @@ header {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    border: solid 6px;
-    border-color: #57a8d1;
     animation-name: shrink-circle;
     animation-duration: 2s;
     animation-iteration-count: 10; }
@@ -98,9 +103,6 @@ header {
     header .circle.small {
       height: 50px;
       width: 50px;
-      border: solid 6px;
-      display: none;
-      border-color: #57a8d1;
       animation-name: grow-circlesmall;
       animation-duration: 2s;
       animation-iteration-count: 10; }
@@ -112,6 +114,15 @@ header {
   to {
     width: 100px;
     height: 100px; } }
+  header .triangle {
+    fill: transparent;
+    stroke-width: 4; }
+    header .triangle.blue {
+      stroke: #57a8d1; }
+    header .triangle.green {
+      stroke: #33cc99; }
+    header .triangle.orange {
+      stroke: #f5b87b; }
   header .colorChoice {
     display: flex;
     flex-direction: row;
@@ -125,14 +136,50 @@ header {
       width: 60px;
       margin: 20px;
       cursor: pointer; }
+      header .colorChoice .square.left.green {
+        background-color: #33cc99; }
+      header .colorChoice .square.left.blue {
+        background-color: #57a8d1; }
+      header .colorChoice .square.left.orange {
+        background-color: #f5b87b; }
+      header .colorChoice .square.right.green {
+        background-color: #33cc99; }
+      header .colorChoice .square.right.blue {
+        background-color: #57a8d1; }
+      header .colorChoice .square.right.orange {
+        background-color: #f5b87b; }
+    header .colorChoice .activeColor.blue {
+      border: solid 2px;
+      border-color: #57a8d1; }
+    header .colorChoice .activeColor.green {
+      border: solid 2px;
+      border-color: #33cc99; }
+    header .colorChoice .activeColor.orange {
+      border: solid 2px;
+      border-color: #f5b87b; }
     header .colorChoice .square.central {
       height: 90px;
       width: 90px;
       margin: 5px; }
+      header .colorChoice .square.central.blue {
+        background-color: #57a8d1; }
+      header .colorChoice .square.central.green {
+        background-color: #33cc99; }
+      header .colorChoice .square.central.orange {
+        background-color: #f5b87b; }
 
 section.brand {
   background-color: #e5e5e5;
   position: relative; }
+  section.brand .triangle {
+    fill: transparent;
+    stroke-width: 4; }
+    section.brand .triangle.blue {
+      stroke: #57a8d1; }
+    section.brand .triangle.green {
+      stroke: #33cc99; }
+    section.brand .triangle.orange {
+      stroke: #f5b87b; }
   section.brand .brandText {
     overflow: hidden;
     color: #6E6E6E;
@@ -163,16 +210,28 @@ section.brand {
     top: 500px;
     margin-left: 150px;
     position: absolute;
-    border: solid 6px;
-    border-color: #57a8d1; }
+    border: solid 6px; }
+    section.brand .circle.blue {
+      color: #57a8d1; }
+    section.brand .circle.green {
+      color: #33cc99; }
+    section.brand .circle.orange {
+      color: #f5b87b; }
   section.brand .circle.big {
     position: absolute;
     height: 330px;
     width: 330px;
     top: 780px;
-    right: -152px;
-    border: dashed 6px;
-    border-color: #57a8d1; }
+    right: -152px; }
+    section.brand .circle.big.blue {
+      border: dashed 4px;
+      border-color: #57a8d1; }
+    section.brand .circle.big.green {
+      border: dashed 4px;
+      border-color: #33cc99; }
+    section.brand .circle.big.orange {
+      border: dashed 4px;
+      border-color: #f5b87b; }
   section.brand .logo2 {
     position: absolute;
     background-color: #FFF;
@@ -200,6 +259,14 @@ section.brand {
       position: relative;
       bottom: -15px;
       right: -190px; }
+  section.brand .background {
+    color: white; }
+    section.brand .background.blue {
+      background-color: #57a8d1; }
+    section.brand .background.green {
+      background-color: #33cc99; }
+    section.brand .background.orange {
+      background-color: #f5b87b; }
   section.brand .links {
     display: flex;
     flex-direction: column;
@@ -324,11 +391,19 @@ section.jump {
       border-bottom: 50px solid transparent; }
   section.jump .road {
     display: inline-flex; }
-    section.jump .road .background {
-      border-left: dashed 30px #57a8d1;
+    section.jump .road .dash {
       transform: rotate(-30deg);
       height: 700px;
       margin-left: 40px; }
+      section.jump .road .dash.blue {
+        border-left: dashed 30px;
+        border-color: #57a8d1; }
+      section.jump .road .dash.green {
+        border-left: dashed 30px;
+        border-color: #33cc99; }
+      section.jump .road .dash.orange {
+        border-left: dashed 30px;
+        border-color: #f5b87b; }
     section.jump .road .logo {
       width: 100%; }
       section.jump .road .logo .gray {
@@ -339,6 +414,17 @@ section.jump {
         display: none;
         margin-top: 80%;
         height: 100px; }
+
+@keyframes frog-jump {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1); }
+  40% {
+    transform: translate3d(0, 30%, 0) scale3d(0.7, 1.5, 1); }
+  100% {
+    transform: translate3d(0, 100%, 0) scale3d(1.5, 0.7, 1); } }
+        section.jump .road .logo .colored.frog-jump {
+          transform-origin: 50% 50%;
+          animation: frog-jump .5s linear alternate infinite; }
 
 footer {
   height: 300px;
@@ -526,7 +612,7 @@ footer {
       section.top .shapes .circle.small {
         margin-left: 250px;
         margin-bottom: 50px;
-        display: inline-flex;
+        display: inline-flex !important;
         height: 80px;
         width: 80px; }
     section.top .shapes .circle-triangle {
@@ -592,9 +678,6 @@ footer {
       font-size: 30px;
       line-height: 40px;
       left: 35vw; }
-      section.brand .brandText .text .background {
-        background-color: #57a8d1;
-        color: white; }
       section.brand .brandText .text img {
         bottom: -70px;
         right: -450px; }
@@ -697,9 +780,6 @@ footer {
     margin-left: 4vw; }
   section.brand .text #dot {
     right: -700px; }
-  section.brand .text .background {
-    background-color: #57a8d1;
-    color: white; }
   section.brand .links {
     margin-top: 400px !important;
     zoom: 130%;
